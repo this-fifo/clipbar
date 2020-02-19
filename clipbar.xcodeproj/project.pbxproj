@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		177EECE023FCA517004EE789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EECDF23FCA517004EE789 /* AppDelegate.swift */; };
-		177EECE223FCA517004EE789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EECE123FCA517004EE789 /* ContentView.swift */; };
 		177EECE423FCA518004EE789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177EECE323FCA518004EE789 /* Assets.xcassets */; };
 		177EECE723FCA518004EE789 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177EECE623FCA518004EE789 /* Preview Assets.xcassets */; };
 		177EECEA23FCA518004EE789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177EECE823FCA518004EE789 /* Main.storyboard */; };
 		177EECF623FCA518004EE789 /* clipbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EECF523FCA518004EE789 /* clipbarTests.swift */; };
 		177EED0123FCA518004EE789 /* clipbarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EED0023FCA518004EE789 /* clipbarUITests.swift */; };
+		177EED0F23FCA86E004EE789 /* ClipbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EED0E23FCA86E004EE789 /* ClipbarViewController.swift */; };
+		177EED1323FCB3DA004EE789 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EED1223FCB3DA004EE789 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		177EECDC23FCA517004EE789 /* clipbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clipbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177EECDF23FCA517004EE789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		177EECE123FCA517004EE789 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		177EECE323FCA518004EE789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177EECE623FCA518004EE789 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		177EECE923FCA518004EE789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		177EECFC23FCA518004EE789 /* clipbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		177EED0023FCA518004EE789 /* clipbarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clipbarUITests.swift; sourceTree = "<group>"; };
 		177EED0223FCA518004EE789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177EED0E23FCA86E004EE789 /* ClipbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipbarViewController.swift; sourceTree = "<group>"; };
+		177EED1223FCB3DA004EE789 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				177EECDF23FCA517004EE789 /* AppDelegate.swift */,
-				177EECE123FCA517004EE789 /* ContentView.swift */,
+				177EED0E23FCA86E004EE789 /* ClipbarViewController.swift */,
 				177EECE323FCA518004EE789 /* Assets.xcassets */,
 				177EECE823FCA518004EE789 /* Main.storyboard */,
 				177EECEB23FCA518004EE789 /* Info.plist */,
 				177EECEC23FCA518004EE789 /* clipbar.entitlements */,
 				177EECE523FCA518004EE789 /* Preview Content */,
+				177EED1223FCB3DA004EE789 /* EventMonitor.swift */,
 			);
 			path = clipbar;
 			sourceTree = "<group>";
@@ -266,8 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177EECE223FCA517004EE789 /* ContentView.swift in Sources */,
+				177EED0F23FCA86E004EE789 /* ClipbarViewController.swift in Sources */,
 				177EECE023FCA517004EE789 /* AppDelegate.swift in Sources */,
+				177EED1323FCB3DA004EE789 /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
